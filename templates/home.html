@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>
+		   Jacob's Lightserver 
+	    </title>
+	<script>
+	function turnonlights() {	
+			var xmlHttp = new XMLHttpRequest();
+    			xmlHttp.onreadystatechange = function() { 
+        		if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+				callback(xmlHttp.responseText);
+			}
+			xmlHttp.open("GET", "/turnonlights", true); // true for asynchronous 
+			xmlHttp.send(null);
+		}
+	function turnofflights() {	
+			var xmlHttp = new XMLHttpRequest();
+    			xmlHttp.onreadystatechange = function() { 
+        		if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+				callback(xmlHttp.responseText);
+			}
+			xmlHttp.open("GET", "/turnofflights", true); // true for asynchronous 
+			xmlHttp.send(null);
+		}
+	function changecolor() {	
+			var colorurl = "/colorchange?color="+document.getElementById("color").value;
+			var xmlHttp = new XMLHttpRequest();
+    			xmlHttp.onreadystatechange = function() { 
+        		if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+				callback(xmlHttp.responseText);
+			}
+			xmlHttp.open("GET", colorurl, true); // true for asynchronous 
+			xmlHttp.send(null);
+		}
+	</script>
+    </head>
+    <body>
+	    <center>
+		<h1>Control Jacob's Lights</h1>
+		<button onclick="turnonlights()">Turn on lights</button>
+		<button onclick="turnofflights()">Turn off lights</button>
+	    </center>
+    </body>
+</html>
