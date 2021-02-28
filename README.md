@@ -10,23 +10,23 @@ These are the steps for installing on a Raspberry Pi, although they should trans
 
 Install python3
 ```
-	sudo apt install python3
+sudo apt install python3 python3-pip
 ```
 Install Flask
 ```
-	sudo pip3 install flask
+sudo pip3 install flask
 ```
 Install [lifxlan](https://github.com/mclarkk/lifxlan)
 ```
-	git clone https://github.com/mclarkk/lifxlan.git
-	cd lifxlan
-	sudo python3 setup.py install
+git clone https://github.com/mclarkk/lifxlan.git
+cd lifxlan
+sudo python3 setup.py install
 ```
 Clone and run this repository
 ```
-	git clone https://github.com/jacobwhall/light-control.git
-	cd light-control
-	sudo ./web.py
+git clone https://github.com/jacobwhall/light-control.git
+cd light-control
+sudo ./web.py
 ```
 I'll add instructions for daemonizing this soon!
 
