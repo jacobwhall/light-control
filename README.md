@@ -34,6 +34,6 @@ I'll add instructions for daemonizing this soon!
 
 A huge thanks to @mclarkk and the other contributors to [lifxlan](https://github.com/mclarkk/lifxlan). Their library has been so easy to work with.
 
-Thanks to @[Elijah1111](https://github.com/Elijah1111) for introducing me to the wonders of Flask. This project began by stealing some of his work, hopefully he'll forgive me.
+Thanks to @[Elijah1111](https://github.com/Elijah1111) for introducing me to the wonders of Flask. This project was created through the modification of his work.
 
 Thanks to the people who made Flask, whoever they are!
